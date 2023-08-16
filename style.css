@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #7ea5af;
     display: flex;
@@ -12,21 +13,23 @@ body{
     justify-content: center;
 }
 
-
 main{
-    height: 80%;
     width: 80%;
+    margin: 50px 0px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
 }
+
+
 .topnav{
     background-color: #043444;
-    height: 70px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    flex-wrap: wrap;
+    padding: 6px;
 }
 .content{
     display: flex;
@@ -48,12 +51,14 @@ main{
 }
 
 .circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px 60px;
-    height: 400px;
+    text-align: center;
+    padding: 5px 10px;
+    height: calc(100% - 90px);
+}
+.circle h1{
+    color: #043444;
+    font-size: 26px;
+    padding: 100px 0px;
 }
 .circle .btn{
     height: 50px;
