@@ -74,3 +74,38 @@ main{
 .circle .btn:hover{
     background-color: #043444;
 }
+
+.popup{
+    margin-top: 150px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 80%;
+    padding: 30px;
+    border-radius: 8px;
+    display: none;
+}
+.popup h2{
+    color:#bbf1ff;
+    padding-bottom: 15px;
+}
+
+.popup p{
+    line-height: 25px;
+}
+.popup .popupclosebtn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup .popupclosebtn:hover{
+    color: red;
+    transition: .2s ease;
+}

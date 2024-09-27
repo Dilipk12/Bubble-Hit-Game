@@ -2,6 +2,8 @@ let circle = document.querySelector(".circle");
 let hit = document.querySelector(".hit");
 let timer = document.querySelector(".timer");
 let score = document.querySelector(".score");
+let popup = document.querySelector(".popup");
+let popupclosebtn = document.querySelector(".popupclosebtn");
 
 let timersecond = 59;
 let scorenum = 0;
@@ -61,6 +63,15 @@ circle.addEventListener('click', (e)=>{
 })
 
 
-timersec();
-circlerandomnum();
-hitrandomnum();
+// popup 
+
+setTimeout(function(){
+    popup.style.display = 'inline';
+},1000)
+
+popupclosebtn.addEventListener('click', function(){
+    popup.style.display = 'none';
+    timersec();
+    circlerandomnum();
+    hitrandomnum();
+})
